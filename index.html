@@ -1,0 +1,58 @@
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <title>ArcGIS Maps SDK for JavaScript Tutorials: Display a map</title>
+
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      #basemapStyles {
+      width: 250px;
+      padding: 10px;
+    }
+
+    .esri-feature {
+      letter-spacing: 0em;
+      line-height: 1.55rem;
+      font-feature-settings: "liga"1, "calt"0;
+      background: #fff;
+      padding: 1em;
+    }
+    </style>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css">
+    <link rel="stylesheet" type="text/css" href="https://js.arcgis.com/calcite-components/1.10.0/calcite.css" />
+    <script type="module" src="https://js.arcgis.com/calcite-components/1.10.0/calcite.esm.js"></script>
+    <script src="https://js.arcgis.com/4.28/"></script>
+    <script src="index.js"></script>
+
+
+  </head>
+  <body>
+    <div id="viewDiv" class="esri-widget"></div>
+    <div id="basemapGalleryDiv"></div>
+    <calcite-action-pad id="calciteActionPad">
+        <calcite-action id="addLayer" text="Add tree layer" icon="add-layer"></calcite-action>
+        <calcite-action id="commonAreas" text="Find common areas" icon="overlap-features"></calcite-action>
+        <calcite-action id="clustering" text= "Cluster data" icon="clustering"></calcite-action>
+        <calcite-action id="removeClustering" text= "Remove cluster effect" icon="analysis"></calcite-action>
+        <calcite-action id="reset" text="Reset" icon="reset"></calcite-action>
+        <calcite-tooltip slot="expand-tooltip">Toggle Action Bar</calcite-tooltip>
+    </calcite-action-pad>
+    <calcite-alert id="alert" icon="smile" kind="success" label="Overlap and trees found">
+        <div id="alertTitle" slot="title">Overlap found! </div>
+        <div slot="message"></div>
+    </calcite-alert>
+        
+
+  </body>
+</html>
