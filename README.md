@@ -1,6 +1,8 @@
 # Javascript Maps SDK Intro for Edinburgh JS
 
 On the 21st November I gave a talk at the [EdinburghJS Meetup](https://www.meetup.com/edinburghjs/), hosted by [Jamie McHale](https://www.jamiemchale.com/journal/2023-11-22-edinburgh-js-maps-and-testing) in Fanduel, Edinburgh. I was invited to give an introduction to Esri technology and the [ArcGIS Maps SDK for Javascript](https://developers.arcgis.com/javascript/latest/) so I put together a simple demo that shows how to build a web app showing the location of trees within Edinburgh, using data from Edinburgh City Council. I included a service area operation (using an Esri hosted routing service) to display polygons reflecting an area you could walk to within 15 minutes, in order to show where two friends could meet from different locations within a 15 minute walk on a lunch time, and what trees they could see in the area of overlap.
+
+You can watch the livestream recording of the talk and demo [here](https://www.youtube.com/watch?v=bwpkFsfIOQg).
  
 <img width="1359" alt="Screenshot 2023-11-24 at 22 41 30" src="https://github.com/Rachael-E/edinburghjs-meetup-walktimedemo/assets/36415565/bb2b8e68-8430-4341-9ebf-c394a3d2a984">
 
